@@ -183,11 +183,11 @@
           },
 
            'Turn off the lights' : function(val){
-              window.location="http://192.168.0.200/OFF.php";
+                off();
           },
 
             'Turn on the lights' : function(val){
-              window.location="http://192.168.0.200/ON.php";
+                on();
           },
 
              '' : function(val){
@@ -208,6 +208,32 @@
   annyang.start();
 }
 </script>
+
+<script>
+    function reqOff(){
+        const Http = new XMLHttpRequest();
+        const url='http://192.168.0.200:3000/off';
+        Http.open("GET", url);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+            console.log(Http.responseText)
+        }
+    }
+
+
+    function reqOn(){
+        const Http = new XMLHttpRequest();
+        const url='http://192.168.0.200:3000/on';
+        Http.open("GET", url);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+            console.log(Http.responseText)
+        }
+    }
+</script>
+
 
         </body>
 </html>
