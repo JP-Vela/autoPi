@@ -1,4 +1,6 @@
 if (annyang) {
+
+
     // Let's define our first command. First the text we expect, and then the function it should call
     var commands = {
     'boby *val' : function(val){
@@ -99,10 +101,14 @@ if (annyang) {
           },
 
            'Turn off the lights' : function(val){
+                speech.text = "sure thing";
+                speechSynthesis.speak(speech);
                 off();
           },
 
             'Turn on the lights' : function(val){
+                speech.text = "sure thing";
+                speechSynthesis.speak(speech);
                 on();
           },
 
