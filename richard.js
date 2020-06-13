@@ -9,118 +9,111 @@ if (annyang) {
         $scope.$apply();
         },
 
-   /*'do you like babies' : function(){
-        speech.text = "I love babies";
-          speechSynthesis.speak(speech);
-    },*/
-      'are you a*val' : function(val){
-          var aya = ["no", "no", "maybe", "yes"];
-        speech.text = aya[wordnum];
-            speechSynthesis.speak(speech);
-          },
+ 
+            'are you a*val' : function(val){
+                var aya = ["no", "no", "maybe", "yes"];
+                speech.text = aya[wordnum];
+                speechSynthesis.speak(speech);
+            },
 
-             'batman or superman' : function(){
-        speech.text = "batman of course";
-            speechSynthesis.speak(speech);
-          },
+            'batman or superman' : function(){
+                speech.text = "batman of course";
+                speechSynthesis.speak(speech);
+            },
 
-             'iron man or captain america' : function(){
-        speech.text = "ironman";
-            speechSynthesis.speak(speech);
-        },
+            'iron man or captain america' : function(){
+                speech.text = "ironman";
+                speechSynthesis.speak(speech);
+            },
 
-             'who is you favorite DC Superhero' : function(){
-        speech.text = "probably batman";
-            speechSynthesis.speak(speech);
-          },
+            'who is you favorite DC Superhero' : function(){
+                speech.text = "probably batman";
+                speechSynthesis.speak(speech);
+            },
 
-             'boby' : function(val){
-        speech.text = "yes sir";
-            speechSynthesis.speak(speech);
-          },
+            'Richard' : function(val){
+                speech.text = "yes sir?";
+                speechSynthesis.speak(speech);
+            },
 
-             'hello' : function(val){
+            'hello' : function(val){
                  var h = ["hello", "hello", "hey", "hi"];
                 speech.text = h[wordnum];
                 speechSynthesis.speak(speech);
-          },
+            },
 
-             'good how about you' : function(val){
+            'good how about you' : function(val){
                 var ghay = ["fine thank you", "fine thank you", "I am OK", "I am not very well thank you"]; 
+                speech.text = ghay[wordnum];
+                speechSynthesis.speak(speech);
+            },
 
-        speech.text = ghay[wordnum];
-            speechSynthesis.speak(speech);
-          },
+            'how are you' : function(val){
+                speech.text = ghay[wordnum];
+                speechSynthesis.speak(speech);
+            },
 
-             'how are you' : function(val){
-        speech.text = ghay[wordnum];
-            speechSynthesis.speak(speech);
-          },
+            'that\'s good' : function(val){
+                speech.text = "yes it is";
+                speechSynthesis.speak(speech);
+            },
 
-             'that\'s good' : function(val){
-        speech.text = "yes it is";
-            speechSynthesis.speak(speech);
-          },
+            'what day is it' : function(val){
+                speech.text = n;
+                speechSynthesis.speak(speech);
+            },
 
-             'what day is it' : function(val){
-        speech.text = n;
-            speechSynthesis.speak(speech);
-          },
-
-
-
-          'do you like*val' : function(val){
-
-              var dyl = ["", "yes", "not really", "no"];
-              speech.text = dyl[wordnum];
-              speechSynthesis.speak(speech);
-          },
+            'do you like*val' : function(val){
+                var dyl = ["of course", "yes", "not really", "no"];
+                speech.text = dyl[wordnum];
+                speechSynthesis.speak(speech);
+            },
 
            'who are you' : function(val){
-              speech.text = "I am Maya an artificial in Telegence";
-              speechSynthesis.speak(speech);
-          },
-   'what language are you programmed in' : function(val){
-              speech.text = "java script";
-              speechSynthesis.speak(speech);
-          },
+                speech.text = "I am Richard an service bot";
+                speechSynthesis.speak(speech);
+            },
+            'what language are you programmed in' : function(val){
+                speech.text = "java script";
+                speechSynthesis.speak(speech);
+            },
 
            'what time is it' : function(val){
-              speech.text = string[hours-1]+" "+string[min-1];
-              speechSynthesis.speak(speech);
-          },
+                speech.text = string[hours-1]+" "+string[min-1];
+                speechSynthesis.speak(speech);
+            },
 
            'thank you' : function(val){
-              speech.text = "you are welcome";
-              speechSynthesis.speak(speech);
-          },
+                speech.text = "you are welcome";
+                speechSynthesis.speak(speech);
+            },
 
            'thanks' : function(val){
-              speech.text = "you are most very welcome sir";
-              speechSynthesis.speak(speech);
-          },
+                speech.text = "you are most very welcome";
+                speechSynthesis.speak(speech);
+            },
 
            'Turn off the lights' : function(val){
                 speech.text = "sure thing";
                 speechSynthesis.speak(speech);
                 off();
-          },
+            },
 
             'Turn on the lights' : function(val){
                 speech.text = "sure thing";
                 speechSynthesis.speak(speech);
                 on();
-          },
+            },
 
-             '' : function(val){
-              speech.text = "";
-              speechSynthesis.speak(speech);
-          },
+            '' : function(val){
+                speech.text = "";
+                speechSynthesis.speak(speech);
+            },
 
-             '' : function(val){
-              speech.text = "";
-              speechSynthesis.speak(speech);
-          },
+            '' : function(val){
+                speech.text = "";
+                speechSynthesis.speak(speech);
+            },
 
     }
   // Add our commands to annyang
